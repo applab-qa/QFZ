@@ -70,8 +70,8 @@ function Icon({ name, size = 18, className = '', style }) {
 /* ---------------- QFZ logo ---------------- */
 function QFZLogo({ variant = 'color', height = 26, markOnly = false, flagOnly = false }) {
 
-  const MAIN_SRC = 'qfz/QFZ_logo_main.png';
-  const COLLAPSED_SRC = 'qfz/QFZ_logo_collapsed.png';
+  const MAIN_SRC = 'QFZ_logo_main.png';
+  const COLLAPSED_SRC = 'QFZ_logo_collapsed.png';
 
   if (markOnly) {
     return (
