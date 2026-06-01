@@ -69,19 +69,37 @@ function Icon({ name, size = 18, className = '', style }) {
 
 /* ---------------- QFZ logo ---------------- */
 function QFZLogo({ variant = 'color', height = 26, markOnly = false, flagOnly = false }) {
-  const FULL_SRC = 'qfz/qfz-logo-full.png';
-  const FLAG_SRC = 'qfz/qfz-flag.png';
-  const HEADER_SRC = 'qfz/qfz-logo-wordflag.png';
+
+  const MAIN_SRC = 'qfz/QFZ_logo_main.png';
+  const COLLAPSED_SRC = 'qfz/QFZ_logo_collapsed.png';
 
   if (markOnly) {
-    return <img src={FLAG_SRC} alt="QFZ" style={{ height, width: 'auto', display: 'block' }} />;
+    return (
+      <img
+        src={COLLAPSED_SRC}
+        alt="QFZ"
+        style={{ height, width: 'auto', display: 'block' }}
+      />
+    );
   }
 
   if (flagOnly) {
-    return <img src={HEADER_SRC} alt="QFZ" style={{ height, width: 'auto', display: 'block' }} />;
+    return (
+      <img
+        src={MAIN_SRC}
+        alt="QFZ"
+        style={{ height, width: 'auto', display: 'block' }}
+      />
+    );
   }
 
-  return <img src={FULL_SRC} alt="QFZ" style={{ height, width: 'auto', display: 'block' }} />;
+  return (
+    <img
+      src={MAIN_SRC}
+      alt="QFZ"
+      style={{ height, width: 'auto', display: 'block' }}
+    />
+  );
 }
 
 /* ---------------- ECharts React wrapper (animate on reveal + on remount) ---------------- */
