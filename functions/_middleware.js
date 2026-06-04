@@ -2,7 +2,7 @@ export async function onRequest(context) {
 
   // ─── CHANGE THESE ───────────────────────────────
   const USERNAME = "qfzdemo";
-  const PASSWORD = "qfzdemo!@#";
+  const PASSWORD = "qfzdemo@123";
   // ────────────────────────────────────────────────
 
   const authHeader = context.request.headers.get("Authorization");
